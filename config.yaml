@@ -1,0 +1,12 @@
+id: TurPlugin2018
+key: TurPlugin2018
+name: <__trans phrase="_PLUGIN_NAME">
+version: 1.0
+description: <__trans phrase="_PLUGIN_DESCRIPTION">
+author_name: <__trans phrase="_PLUGIN_AUTHOR">
+author_link: https://gp-standard.com
+doc_link: https://gp-standard.com/turplugin2018/
+l10n_class: TurPlugin2018::L10N
+
+callbacks:
+    MT::App::CMS::cms_post_save.entry: $TurPlugin2018::TurPlugin2018::Callbacks::post_save_entry
