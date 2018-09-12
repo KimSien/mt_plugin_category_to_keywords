@@ -11,13 +11,14 @@ sub post_save_entry {
     my $id = $obj->id;
     my $title = $obj->title;
 
-    require MT::Entry;
-    my $entry = MT::Entry->load($id);
-       $entry->blog_id($obj->blog_id);
-       $entry->status(MT::Entry::RELEASE());
-       $entry->author_id($obj->author);
-       $entry->title($obj->title);
-       $entry->text($obj->text);
+    #require MT::Entry;
+    #my $entry = MT::Entry->load($id);
+    #   $entry->blog_id($obj->blog_id);
+    #   $entry->status(MT::Entry::RELEASE());
+    #   $entry->author_id($obj->author);
+    #   $entry->title($obj->title);
+    #   $entry->text($obj->text);
+    my $entry = $obj;
 
     require MT::Category;
     
